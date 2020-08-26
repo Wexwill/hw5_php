@@ -357,20 +357,24 @@ header .nav a {
     text-transform: uppercase;
     font-weight: bold;
 }
+.project .pro_bot .details p:hover {
+    color: #000;
+}
 .project .pro_bot .details .arrow {
     background-image: url(../images/arrow.png);
     width: 15px;
     height: 12px;
     margin-left: 10px;
 }
+.project .pro_bot .details .arrow:hover {
+    background-image: url(../images/arrow_black.png);
+}
 
 .project .pro_laptop {
-    background-image: url(../images/ipad.png);
+    /* background-image: url(../images/ipad.png); */
     width: 671px;
     height: 560px;
 }
-
-
 
 
     /* Footer */
