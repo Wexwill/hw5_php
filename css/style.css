@@ -28,6 +28,10 @@ header .logo {
     font-size: 18px;
     align-items: center;
 }
+header .logo a {
+    color: #000;
+    text-decoration: none;
+}
 
 header .logo .logo_img {
     margin-right: 5px;
@@ -47,7 +51,9 @@ header .nav ul {
     display: flex;
     list-style: none;
 }
-
+header .nav ul li:hover {
+    text-shadow: 1px 1px 2px #000;
+}
 header .nav ul li:not(:last-child) {
     margin-right: 35px;
 }
@@ -105,12 +111,19 @@ header .nav a {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
+    padding: 23px 35px;
+}
+.portfolio .portfolio_wraper button:hover {
+    background-color: #fff;
+}
+.portfolio .portfolio_wraper button:hover a {
+    color: #000;
 }
 
 
     /* Блок Services */
 
-.services .serv_top h3{
+.services .serv_top h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -261,6 +274,13 @@ header .nav a {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
+    padding: 23px 30px;
+}
+.relax button:hover {
+    background-color: #fff;
+}
+.relax button:hover a {
+    color: #000;
 }
 
 
@@ -272,6 +292,10 @@ header .nav a {
     position: absolute;
     top: 160px;
     right: 0;
+    background-image: url(../images/ipad.png);
+    width: 671px;
+    height: 560px;
+    z-index: -1;
 }
 .project .pro_top h3 {
     font-family: 'Montserrat', sans-serif;
@@ -322,7 +346,7 @@ header .nav a {
     background-position: center;
     border: 2px solid #000;
     border-radius: 50%;
-    width: 75px;
+    min-width: 75px;
     height: 75px;
 }
 .project .pro_bot .pro_bot_item .ecom_ico {
@@ -352,12 +376,13 @@ header .nav a {
     display: flex;
     align-items: center;
 }
-.project .pro_bot .details p {
+.project .pro_bot .details a {
     color: #7cc576;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
 }
-.project .pro_bot .details p:hover {
+.project .pro_bot .details:hover a {
     color: #000;
 }
 .project .pro_bot .details .arrow {
@@ -366,14 +391,8 @@ header .nav a {
     height: 12px;
     margin-left: 10px;
 }
-.project .pro_bot .details .arrow:hover {
+.project .pro_bot .details:hover .arrow {
     background-image: url(../images/arrow_black.png);
-}
-
-.project .pro_laptop {
-    /* background-image: url(../images/ipad.png); */
-    width: 671px;
-    height: 560px;
 }
 
 
@@ -440,8 +459,6 @@ footer .footer_wraper .contact_us .contact_us_item p {
 }
 
 
-
-
 footer .footer_wraper .latest_posts {
     width: 300px;
 }
@@ -452,27 +469,29 @@ footer .footer_wraper .latest_posts .news_img {
     background-image: url(../images/news.png);
     background-repeat: no-repeat;
     background-position: center;
-    width: 26px;
+    min-width: 26px;
     height: 21px;
 }
 footer .footer_wraper .latest_posts .gallery_img {
     background-image: url(../images/gallery.png);
     background-repeat: no-repeat;
     background-position: center;
-    width: 26px;
+    min-width: 26px;
     height: 23px;
 }
 footer .footer_wraper .latest_posts .play_img {
     background-image: url(../images/play.png);
     background-repeat: no-repeat;
     background-position: center;
-    width: 18px;
+    min-width: 18px;
     height: 21px;
 }
-footer .footer_wraper .latest_posts .latest_posts_item p {
+footer .footer_wraper .latest_posts .latest_posts_item a {
     margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
 }
-footer .footer_wraper .latest_posts .latest_posts_item p:hover {
+footer .footer_wraper .latest_posts .latest_posts_item a:hover {
     color: #83c77d;
     font-weight: 400;
 }
@@ -501,7 +520,11 @@ footer .footer_wraper .latest_tweets .twitter_img {
 footer .footer_wraper .latest_tweets .tw_text {
     margin-left: 10px;
 }
-footer .footer_wraper .latest_tweets p:hover {
+footer .footer_wraper .latest_tweets a {
+    color: #fff;
+    text-decoration: none;
+}
+footer .footer_wraper .latest_tweets a:hover {
     color: #83c77d;
     font-weight: 400;
 }
@@ -574,3 +597,169 @@ footer .footer_wraper .latest_tweets .tw_text .twit_time {
 .copyright_ico_go:hover {
     background-color: #d95232;
 }
+
+    /* Страница About Us */
+
+.aboutUs {
+    background-color: #f7f7f7;
+    padding-bottom: 40px;
+}
+
+.aboutUs h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.aboutUs p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color: #777777;
+}
+.aboutUs img {
+    width: 80%;
+    display: block;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+    /* Страница Our Blog */
+
+.ourBlog {
+    background-color: #f7f7f7;
+}
+.ourBlog h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.ourBlog .blog_item {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color: #777777;
+    padding-bottom: 40px;
+}
+.ourBlog .blog_item img {
+    width: 30%;
+    padding: 20px;
+}
+
+    /* Страница Portfolio */
+
+.portf {
+    background-color: #f7f7f7;
+}
+.port_top h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.port_bot {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     padding-bottom: 70px;
+}
+.port_bot .item {
+    margin-bottom: 50px;
+}
+.port_bot .item {
+    text-align: center;
+    background-color: #fff;
+}  
+.port_bot .item h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 30px;
+}
+.port_bot .item p {
+    font-size: 14px;
+    color: #868686;
+    padding-bottom: 30px;
+}
+
+    /* Страница Contact */
+
+.contact {
+    background-color: #f7f7f7;
+}
+.contact h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+}
+.contact .form_field {
+    margin: 20px;
+}
+.contact form {
+    text-align: center;
+	padding: 0 40px 40px 40px;
+}
+.contact input {
+	width: 40%;
+	font-size: 15px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cfcfcf;
+	background: #F6F6f6;
+	border-radius: 10px;
+}
+.contact textarea {
+	width: 50%;
+	height: 80px;
+	background: #f6f6f6;
+	border: 1px solid #cecece;
+	border-radius: 8px 0 0 0;
+	padding: 8px 0 8px 10px;
+}
+.contact button {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+	width: 90px;
+	margin: 5px;
+	height: 28px;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #666;
+	border-radius: 5px;
+	box-shadow: 0 0 2px #ccc;
+	cursor: pointer;
+}
+.contact button:hover {
+	box-shadow: inset 0 2px 2px #ccc;
+}
+.contact .sub button {
+	background: #c2ffd1;
+}
+.contact .res button {
+	background: #ff9a75;
+}
+
+    /* Страница Form */
+
+.form h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: rgb(60, 231, 103);
+}
+

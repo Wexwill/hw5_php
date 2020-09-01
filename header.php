@@ -7,8 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
+
+<?php require_once './pagesData.php' ?>
 
 <header class="header">
     <div class="container">
@@ -16,19 +19,15 @@
 
             <div class="logo">
                 <div class="logo_img"></div>
-
-                <div class="logo_text">
-                    Treehouse
-                </div>
+                <a href="/hw5" class="logo_text">Treehouse</a>
             </div>
 
             <div class="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/hw5">Home</a></li>
+                    <?php foreach($pagesData as $key => $page) {
+                        echo '<li><a href="/hw5/page.php?id=' . $key . '">' . $key . '</a></li>';
+                    }; ?>
                 </ul>
             </div>
 

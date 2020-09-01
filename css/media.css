@@ -1,0 +1,121 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 426px) {
+    header {
+        height: 170px;
+    }
+    .header_wraper {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    header .logo {
+        justify-content: center;
+    }
+    header .nav {
+        justify-content: center;
+    }
+    header .nav ul {
+        flex-direction: column;        
+    }
+    header .nav ul li {
+        margin-top: 5px;
+        text-align: center;
+    }
+    header .nav ul li:not(:last-child)  {
+        margin-right: 0;
+    }
+
+    .portfolio .portfolio_wraper h1 {
+        font-size: 40px;
+    }
+
+    .services .serv_top h3 {
+        margin-top: 40px;
+    }
+    .serv_bot {
+        flex-direction: column;
+    }
+    .serv_bot .ecom,
+    .serv_bot .responsive,
+    .serv_bot .websecurity {
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+
+    .relax .relax_wraper {
+        padding-top: 40px;
+    }
+
+    .project .pro_laptop {
+        display: none;
+    }
+    .project .pro_top h3 {
+        margin-top: 40px;
+    }
+
+    .project .pro_bot {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .project .pro_bot .pro_bot_item {
+        flex-direction: column;
+    }
+
+    footer .footer_wraper {
+        flex-direction: column;
+    }
+    footer .footer_wraper .contact_us,
+    footer .footer_wraper .latest_posts {
+        margin-bottom: 20px;
+    }
+
+    .copyright_wraper {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+    }
+    .copyright_wraper .copyright {
+        margin-bottom: 10px;
+    }
+    .copyrights_ico {
+        margin-left: 0;
+    }
+}
+@media (max-width: 426px) {
+    .form input {
+        width: 100%;
+    }
+    .form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 321px) {
+    .portfolio .portfolio_wraper h1 {
+        font-size: 30px;
+    }
+
+    .services .serv_top h3 {
+        font-size: 30px;
+    }
+
+    .relax .relax_text1, 
+    .relax .relax_text2, 
+    .relax .relax_text3 {
+        font-size: 30px;
+    }
+
+    .project .pro_top h3 {
+        font-size: 30px;
+    }
+
+    .copyright_wraper .copyright {
+        text-align: center;
+    }
+
+}
