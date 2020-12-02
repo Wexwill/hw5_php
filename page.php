@@ -74,7 +74,7 @@
 
                     <?php echo $pagesData['contact']['title']?>
 
-                    <form method="POST" action="/hw5/form.php">
+                    <form method="POST" action="/form.php">
 
                         <?php foreach ($pagesData['contact']['body'] as $key => $form): ?>
                             <div class="form_field">

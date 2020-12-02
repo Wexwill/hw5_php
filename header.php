@@ -19,14 +19,14 @@
 
             <div class="logo">
                 <div class="logo_img"></div>
-                <a href="/hw5" class="logo_text">Treehouse</a>
+                <a href="/" class="logo_text">Treehouse</a>
             </div>
 
             <div class="nav">
                 <ul>
-                    <li><a href="/hw5">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <?php foreach($pagesData as $key => $page) {
-                        echo '<li><a href="/hw5/page.php?id=' . $key . '">' . $key . '</a></li>';
+                        echo '<li><a href="/page.php?id=' . $key . '">' . $key . '</a></li>';
                     }; ?>
                 </ul>
             </div>

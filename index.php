@@ -9,7 +9,7 @@ require_once './header.php';
         <div class="portfolio_wraper">
             <h1>Creative digital solutions</h1>
             <p>Proin iaculis purus consequat sem cure.</p>
-            <button><a href="/hw5/page.php?id=portfolio">View portfolio</a></button>
+            <button><a href="/page.php?id=portfolio">View portfolio</a></button>
         </div>
 
     </div>
@@ -67,7 +67,7 @@ require_once './header.php';
                 <p>Round The Clock Support</p>
             </div>
 
-            <button><a href="/hw5/page.php?id=about">Learn more</a></button>
+            <button><a href="/page.php?id=about">Learn more</a></button>
         </div>
 
     </div>
@@ -111,7 +111,7 @@ require_once './header.php';
             <div class="pro_bot_text">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit  aenean rhoncus posuere odio in.</div>
              
             <div class="details">
-                <a href="/hw5/page.php?id=blog">View Details</a>
+                <a href="/page.php?id=blog">View Details</a>
                 <div class="arrow"></div>
             </div>
         </div>

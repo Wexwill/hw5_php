@@ -13,9 +13,9 @@ if (preg_match($regexp_phone, $_REQUEST['phone']) == true && preg_match($regexp_
     </div>
 </section>
 
-<?php else: header("Location: /hw5/page.php?id=contact");
+<?php else: header("Location: /page.php?id=contact");
 endif;
-header("refresh:5;url=/hw5/page.php?id=contact");
+header("refresh:5;url=/page.php?id=contact");
 
 require_once './footer.php';
 require_once './copyright.php';
